@@ -1,0 +1,30 @@
+body{
+    background-color: wheat;
+}
+
+
+#race_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 600;
+    gap: 5px;
+}
+
+#race_container p{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+#btn{
+    display: flex;
+    padding: 12px;
+    border-radius: 7px;
+    background-color: cornflowerblue;
+    color: black;
+    border: 2px solid black;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+}
