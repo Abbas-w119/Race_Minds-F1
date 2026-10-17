@@ -1,4 +1,4 @@
-document.getElementById("f1").textContent = "Formula 1"
+document.getElementById("f1").textContent = "Welcome to Race Minds-F1"
 
 const scenarios = [
   {
@@ -163,17 +163,20 @@ form.addEventListener("submit", function(event){
     let value1_number = +value1
     let value2 = document.querySelector('input[name="tire"]:checked').value
     let value3 = document.querySelector('input[name="drive"]:checked').value
+    let value4 = document.querySelector('input[name="attack"]:checked').value
 
 
     let strategy = {
         pit_lap: value1,
         tire_compound: value2,
-        driving_style: value3
+        driving_style: value3,
+        attack_strategy: value4
     };
 
     console.log(strategy.tire_compound)
     console.log(strategy.driving_style)
     console.log(strategy.pit_lap)
+    console.log(strategy.attack_strategy)
 
 })
 

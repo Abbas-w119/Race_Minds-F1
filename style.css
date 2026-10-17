@@ -1,5 +1,5 @@
 body{
-    background-color: wheat;
+    background-color: rgb(108, 106, 106);
 }
 
 
@@ -10,21 +10,109 @@ body{
     gap: 5px;
 }
 
+.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 30px;
+            border-radius: 8px;
+        }
+
+        /* Logo styling */
+        .logo a {
+            color: #2869b8;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation links container */
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        /* Individual link items */
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        /* Link tag styling */
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+
+#track{
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 7px;
+    text-align: center;
+    background-color: rgb(60, 138, 226);
+}
+
 #race_container p{
     border: 1px solid black;
     padding: 10px;
     border-radius: 6px;
     margin: 8px;
+    background-color: rgb(171, 168, 168);
+}
+
+#user{
+    text-align: center;
+}
+
+
+
+.Racemind{
+    background-color: rgb(244, 245, 245);
+    padding: 10px;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.Racemind p{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 11px;
+    background-color: rgb(72, 175, 154);
+
+}
+
+.Racemind h3{
+    padding: 8px;
+    background-color: rgb(76, 226, 60);
+    border-radius: 8px;
+
+}
+
+#formm{
+    
 }
 
 #btn{
-    display: flex;
     padding: 12px;
     border-radius: 7px;
     background-color: cornflowerblue;
     color: black;
     border: 2px solid black;
     font-weight: 800;
-    justify-content: center;
-    align-items: center;
+    display:block;
+    margin:auto;
+    width: 320px;
+    height: 50px;
+    
 }
