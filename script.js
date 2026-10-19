@@ -1,5 +1,4 @@
 document.getElementById("f1").textContent = "Welcome to Race Minds-F1"
-
 const scenarios = [
   {
     track: "Monaco",
@@ -155,28 +154,50 @@ container.appendChild(base_lap)
 
 
 
+    let button = document.getElementById("btn")
+    const questions = ["Q1","Q2","Q3","Q4"]
+
+    let values = {} ;
+
+    function checkForm(){
+    let allAnswered = true
+
+    for(let question of questions){
+      const selected = document.querySelector(
+        `input[name="${question}"]:checked`
+      );
+
+      if(!selected){
+        allAnswered = false
+        break;
+      }
+
+        values[question] = selected.value ;
+
+    }
+
+    if(allAnswered){
+      button.disabled = false;
+
+}
+    
+  }
+
+
+    const radios = document.querySelectorAll(
+    'input[type="radio"]'
+);
+
+    for(let radio of radios){
+    radio.addEventListener("change", checkForm);
+}
+
+
 const form = document.getElementById("formm")
 form.addEventListener("submit", function(event){
     event.preventDefault()
+    console.log(values)
 
-    let value1 = document.querySelector('input[name="pit_lap"]:checked').value
-    let value1_number = +value1
-    let value2 = document.querySelector('input[name="tire"]:checked').value
-    let value3 = document.querySelector('input[name="drive"]:checked').value
-    let value4 = document.querySelector('input[name="attack"]:checked').value
-
-
-    let strategy = {
-        pit_lap: value1,
-        tire_compound: value2,
-        driving_style: value3,
-        attack_strategy: value4
-    };
-
-    console.log(strategy.tire_compound)
-    console.log(strategy.driving_style)
-    console.log(strategy.pit_lap)
-    console.log(strategy.attack_strategy)
 
 })
 
