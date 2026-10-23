@@ -104,7 +104,7 @@ body{
     cursor: not-allowed;
 }
 
-#btn:hover{
+#btn:hover:not(:disabled) {
     background-color: royalblue;
     color: white;
     transform: scale(1.05);
@@ -125,3 +125,17 @@ body{
     transition: 0.4s;
     
 }
+
+#Formula{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#gnr{
+    background-color: rgb(225, 103, 59);
+    font-weight: 700;
+    border-radius: 10px;
+}
+

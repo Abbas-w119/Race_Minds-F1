@@ -55,6 +55,7 @@ const scenarios = [
     base_lap_time: 103,
     pit_stop_time_loss: 28
   },
+  
   {
     track: "Interlagos",
     current_lap: 22,
@@ -66,6 +67,7 @@ const scenarios = [
     base_lap_time: 72,
     pit_stop_time_loss: 19
   },
+
   {
     track: "Monza",
     current_lap: 35,
@@ -78,7 +80,6 @@ const scenarios = [
     pit_stop_time_loss: 21
   }
 ];
-
 
 
 const random = Math.floor(Math.random() * scenarios.length)
@@ -173,16 +174,13 @@ container.appendChild(base_lap)
       }
 
         values[question] = selected.value ;
-
     }
 
     if(allAnswered){
       button.disabled = false;
-
 }
     
   }
-
 
     const radios = document.querySelectorAll(
     'input[type="radio"]'
